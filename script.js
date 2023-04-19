@@ -1,3 +1,6 @@
+//seccion nosotros//
+
+
 let nosText_btn= document.getElementById ('nosText_btn');
 let nosText = document.getElementById('nosText');
 
@@ -12,4 +15,9 @@ function toggleText(){
         nosText_btn.innerHTML = 'Saber Más'
     }
 }
+//seccion contacto//
+$(document).ready(function() {
+    $("#basic-form").validate();
+  });
 
+ 

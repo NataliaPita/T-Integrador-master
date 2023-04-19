@@ -33,16 +33,17 @@ body{
 }
 .menu__link {
     color: aliceblue;
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px;
     margin-right: 20px;
     text-decoration: none;
 } 
 .menu__link:hover {   
-    font-size: 15px;   
+    font-size: 18px;   
     color:black;
     text-decoration:underline;    
 }
+
 
 /*Carousel*/
 .carousel-texto{
@@ -64,7 +65,11 @@ body{
 .card-titulo{
     text-align: center;
     color: black;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.card-tirulos{
+    font-size: 25px;
     font-weight: bolder;
 }
 .card-container{
@@ -73,8 +78,8 @@ body{
     grid-template-columns:repeat(4, 1fr) ;
 }
 .card{   
-    width: 250px;
-    height: 300px;
+    width: 280px;
+    height: 390px;
     border: 1px solid black;
     border-radius: 5px;
     background-color:white;
@@ -84,23 +89,19 @@ body{
 }
 .card:hover{
   transform: scale(1.2);
-
-
-
-
 }
 .card-img{
-    width: 250px;
-    height:150px;
+    width: 280px;
+    height:180px;
 }
 .card-fig{
     display: flex;
     flex-direction: column;
     align-items: center;    
 }
-span{
+.card span{
     color:black;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;  
 }
 .card-condicion{
@@ -109,11 +110,11 @@ span{
 .card-boton{
     background-color: red;
     color:white;
-    width: 80px;
-    height: 30px;  
+    width: 90px;
+    height: 40px;  
     margin-top: 5px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 16px;
 }
  
 .btn-calc{
@@ -172,7 +173,7 @@ h3{
     text-align: center;
 }
 .prop p,span{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     text-align: justify;    
 }
@@ -186,25 +187,54 @@ h3{
 }
 
 /* Style contacto*/
-#contacto{
+.contacto h3{
+    text-align: start;
+    margin-left:325px ;
+}
+.contacto{
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;   
 }
 .contactos{
     display: flex; 
     justify-content: space-around;
-    align-items: center;   
+    align-items: center; 
+    padding-top: 30px ;        
+}
+.contactos form{
+    width: 40%;
+    background-color:#f2e8c9;
+    box-shadow: 7px 7px 15px ;
+    border-radius: 20px;
+    padding: 8px 80px; 
+}
+.contactos label{
+    font-size: 18px;
+    font-weight:600 ;
+    display: block;
+    margin-bottom: 8px; 
+}
+.contactos input{
+    width: 100%;
+    background-color:#ffffff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    border: none;
+    padding: 10px 20px;
+    outline-color :burlywood;
+    font-size: 16px;
+    box-sizing: border-box;  
 }
 
 .boton-enviar{
-    width: 80px;
+    width: 100px;
     font-size: 15px; 
     margin-left: 2px;
     background-color: red;
     color:white;
-    border-radius: 5px;
-    padding: 3px;
+    border-radius:5px;
+    padding: 5px;   
 }
+
 
 /*footer*/
 .caja {
@@ -225,12 +255,13 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-bottom: 50px;
 }
 .mapa h3{
     color: #fff;  
     font-weight: bold;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+    font-size: 35px;
 
 }
 .contacto-foot{
@@ -243,14 +274,14 @@ h3{
     color: #fff;  
 }
 .contacto-items{
-   padding-top: 20px;
+  padding-top: 10px;
 }
 
 ul {
     list-style: none;
 }
 ul li{
-    font-size: 16px;
+    font-size: 20px;
 }
 .footer-link{
     color:white
@@ -258,6 +289,7 @@ ul li{
 
 h6 {
     color: #999;
+    text-align: center;
 }
 button{
     background: none;  
@@ -266,13 +298,16 @@ button{
 .btn-redes{
    
     display: flex;
-    justify-content: space-evenly 
+    justify-content: center;
+  
 } 
-
+.bi-instagram{
+    margin: 20px;
+}
  .btn-wsp{
     position: fixed;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     line-height: 40px;
     bottom: 80px;
     right: 80px;
@@ -288,3 +323,61 @@ button{
     color: #fff;
  }
 
+
+@media  (max-width: 768px){
+    .barra{
+        flex-direction: column;
+        height: 200px;
+        position: relative;
+    }
+    .menu__lista{
+        align-items: center;
+        flex-direction: column;
+    }
+   
+    .card-container{
+        margin: 40px 40px 30px;       
+        grid-template-columns:repeat(2, 1fr) ;
+    }
+    .card-titulo{      
+       text-align: center;
+       font-size: 20px;
+    }
+    .Nos .content{
+        flex-direction: column;
+        padding: 10px;
+        margin: 20px;
+    }
+    .colaboradores{
+        margin-top: 15px;
+    }
+    .prop p ,.nosoculto{
+        font-size: 9px;
+        text-align: justify;
+    }
+    .contactos{     
+        flex-direction: column;
+        align-items: center;             
+    }
+    .contactos form{
+      width: 60%;
+    }
+    .contacto form textarea{
+        width: 100%;
+    }
+    
+    
+    .img-corta{
+        width: 300px;
+    }
+    .caja{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mapa h3 ,.texto h3{
+     font-size: 20px;
+    }
+    .contacto-items li{
+        font-size: 16px;
+    }
+}
